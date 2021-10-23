@@ -38,8 +38,11 @@ String sgender;
 if(gender<5)
 {
 	sgender= "female";
-}else{
+}else if( gender > 0 ){
 	sgender="male";
+}
+else{
+	sgender = "other"
 }
 				int nationality =Integer.parseInt(Character.toString(idnumber.charAt(10)  )  );
 			String snationality;
@@ -53,7 +56,8 @@ if(gender<5)
 					tvResult.setText(text);
 					tvResult.setVisibility(view.VISIBLE);
 					}
-		});
+		},
+		);
 		
 		
 		}
